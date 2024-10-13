@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KBC Quiz Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Start Screen -->
+        <div id="start-screen">
+            <h1>Welcome to KBC Quiz Game!</h1>
+            <button id="start-button" onclick="startGame()">Start Game</button>
+        </div>
+
+        <!-- Quiz Section -->
+        <div id="question-section" style="display:none;">
+            <p id="question-text"></p>
+            <div class="options">
+                <button id="option1" class="option" onclick="checkAnswer(1)"></button>
+                <button id="option2" class="option" onclick="checkAnswer(2)"></button>
+                <button id="option3" class="option" onclick="checkAnswer(3)"></button>
+                <button id="option4" class="option" onclick="checkAnswer(4)"></button>
+            </div>
+        </div>
+
+        <!-- Quit Button -->
+        <button id="quit" style="display:none; align-items: center;" onclick="quitGame()">Quit Game</button>
+
+        <!-- Game Info Section -->
+        <p id="message">Will you be the next Crorepathi? Start playing now to know..</p>
+        <p id="money-won"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
